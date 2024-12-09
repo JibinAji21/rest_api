@@ -72,7 +72,7 @@ def fun5(req):
         else:
             return JsonResponse(s.errors,status=status.HTTP_400_BAD_REQUEST)
         
-@api_view(['GET',"PUT","DELETE"])
+@api_view(['GET','PUT','DELETE'])
 def fun6(req,d):
     try:
         demo=Project.objects.get(pk=d)

@@ -2,9 +2,9 @@ from rest_framework import serializers
 from .models import *
 
 class Sample(serializers.Serializer):
-    roll_no=serializers.Intergerfield()
-    name=serializers.Charfield()
-    age=serializers.Integerfield()
+    roll_no=serializers.IntegerField()
+    name=serializers.CharField()
+    age=serializers.IntegerField()
     email=serializers.EmailField()
 
 
